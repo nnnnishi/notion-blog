@@ -50,7 +50,7 @@ export async function getStaticProps({ preview }) {
 export default ({ posts = [], preview }) => {
   return (
     <>
-      <Header titlePre="Blog" />
+      <Header titlePre="Memo" />
       {preview && (
         <div className={blogStyles.previewAlertContainer}>
           <div className={blogStyles.previewAlert}>
@@ -71,7 +71,7 @@ export default ({ posts = [], preview }) => {
           return (
             <div className={blogStyles.postPreview} key={post.Slug}>
               <h3>
-                <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
+                <Link href="/memo/[slug]" as={getBlogLink(post.Slug)}>
                   <div className={blogStyles.titleContainer}>
                     {!post.Published && (
                       <span className={blogStyles.draftBadge}>Draft</span>

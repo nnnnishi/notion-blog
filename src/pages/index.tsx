@@ -10,11 +10,11 @@ export default () => (
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
       <h1>NAOKI Nishimura</h1>
-      <p>
+      <h2>
         <ExtLink href="https://sites.google.com/view/naoki-nishimura">
           Google Site
         </ExtLink>{' '}
-      </p>
+      </h2>
     </div>
   </>
 )
